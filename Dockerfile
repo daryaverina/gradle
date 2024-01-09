@@ -13,7 +13,7 @@ COPY gradlew .
 COPY gradle gradle
 
 # Загружаем зависимости Gradle
-RUN ./gradlew build -x test
+RUN ./gradlew build
 
 # Копируем исходный код
 COPY src src
